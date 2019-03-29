@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?><!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions> 
+
+<definition name="defaultLayout" template="/WEB-INF/views/layouts/defaultLayout.jsp">
+<put-attribute name="header" value="/WEB-INF/views/layouts/header.jsp"></put-attribute>
+<put-attribute name="banner" value="/WEB-INF/views/layouts/banner.jsp"></put-attribute>
+<put-attribute name="body" ></put-attribute>
+<put-attribute name="footer" value="/WEB-INF/views/layouts/footer.jsp"></put-attribute>
+</definition>
+<definition name="defaultLayout1" template="/WEB-INF/views/layouts/defaultLayout1.jsp">
+<put-attribute name="header" value="/WEB-INF/views/layouts/header.jsp"></put-attribute>
+<put-attribute name="body" ></put-attribute>
+<put-attribute name="footer" value="/WEB-INF/views/layouts/footer.jsp"></put-attribute>
+</definition>
+<definition name="admin" template="/WEB-INF/views/admin/layouts/layout.jsp">
+<put-attribute name="header" value="/WEB-INF/views/admin/layouts/header.jsp"></put-attribute>
+<put-attribute name="body" ></put-attribute>
+<put-attribute name="footer" value="/WEB-INF/views/admin/layouts/footer.jsp"></put-attribute>
+<put-attribute name="menu" value="/WEB-INF/views/admin/layouts/menu.jsp"></put-attribute>
+</definition>
+
+
+
+<definition name="err" template="/WEB-INF/views/err.jsp"></definition>
+
+
+
+<definition name="home" extends="defaultLayout">
+<put-attribute name="body" value="/WEB-INF/views/home.jsp" ></put-attribute>
+</definition>
+
+<definition name="product" extends="defaultLayout1">
+<put-attribute name="body" value="/WEB-INF/views/product.jsp" ></put-attribute>
+</definition>
+<definition name="seachproduct" extends="defaultLayout1">
+<put-attribute name="body" value="/WEB-INF/views/seachproduct.jsp" ></put-attribute>
+</definition>
+<definition name="login" extends="defaultLayout1">
+<put-attribute name="body" value="/WEB-INF/views/login.jsp" ></put-attribute>
+</definition>
+<definition name="register" extends="defaultLayout1">
+<put-attribute name="body" value="/WEB-INF/views/register.jsp" ></put-attribute>
+</definition>
+<definition name="updatepassword" extends="defaultLayout1">
+<put-attribute name="body" value="/WEB-INF/views/user/updatepassword.jsp" ></put-attribute>
+</definition>
+<definition name="cart" extends="defaultLayout1">
+<put-attribute name="body" value="/WEB-INF/views/user/cart.jsp" ></put-attribute>
+</definition>
+<definition name="thanhtoan" extends="defaultLayout1">
+<put-attribute name="body" value="/WEB-INF/views/user/bill.jsp" ></put-attribute>
+</definition>
+<definition name="wish" extends="defaultLayout1">
+<put-attribute name="body" value="/WEB-INF/views/user/wishlist.jsp" ></put-attribute>
+</definition>
+<definition name="single" extends="defaultLayout1">
+<put-attribute name="body" value="/WEB-INF/views/single.jsp" ></put-attribute>
+</definition>
+<definition name="account" extends="defaultLayout1">
+<put-attribute name="body" value="/WEB-INF/views/user/account.jsp" ></put-attribute>
+</definition>
+<definition name="homeAdmin" extends="admin">
+<put-attribute name="body" value="/WEB-INF/views/admin/index.jsp" ></put-attribute>
+</definition>
+<definition name="addproduct" extends="admin">
+<put-attribute name="body" value="/WEB-INF/views/admin/addproduct.jsp" ></put-attribute>
+</definition>
+<definition name="allproduct" extends="admin">
+<put-attribute name="body" value="/WEB-INF/views/admin/product.jsp" ></put-attribute>
+</definition>
+<definition name="adduser" extends="admin">
+<put-attribute name="body" value="/WEB-INF/views/admin/adduser.jsp" ></put-attribute>
+</definition>
+<definition name="user" extends="admin">
+<put-attribute name="body" value="/WEB-INF/views/admin/user.jsp" ></put-attribute>
+</definition>
+<definition name="updateUser" extends="admin">
+<put-attribute name="body" value="/WEB-INF/views/admin/updateuser.jsp" ></put-attribute>
+</definition>
+<definition name="order" extends="admin">
+<put-attribute name="body" value="/WEB-INF/views/admin/order.jsp" ></put-attribute>
+</definition>
+<definition name="billorder" extends="admin">
+<put-attribute name="body" value="/WEB-INF/views/admin/billorder.jsp" ></put-attribute>
+</definition>
+<definition name="lichsudathang" extends="defaultLayout1">
+<put-attribute name="body" value="/WEB-INF/views/user/lichsudathang.jsp" ></put-attribute>
+</definition>
+<definition name="chitietdonhang" extends="defaultLayout1">
+<put-attribute name="body" value="/WEB-INF/views/user/chitietdonhang.jsp" ></put-attribute>
+</definition>
+<definition name="category" extends="admin">
+<put-attribute name="body" value="/WEB-INF/views/admin/allcategory.jsp" ></put-attribute>
+</definition>
+<definition name="addcategory" extends="admin">
+<put-attribute name="body" value="/WEB-INF/views/admin/addcategory.jsp" ></put-attribute>
+</definition>
+<definition name="updateproduct" extends="admin">
+<put-attribute name="body" value="/WEB-INF/views/admin/updateproduct.jsp" ></put-attribute>
+</definition>
+
+<definition name="loginAdmin" template="/WEB-INF/views/admin/login.jsp"></definition>
+
+</tiles-definitions>
